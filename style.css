@@ -1,0 +1,446 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    height: 100vh;
+    max-width: 100%;
+    
+}
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: #3498db;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    color: white;
+    padding: 0 100px;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+    font-size: 20px;
+}
+nav li {
+    display: inline-block;
+    margin: 0 12px;
+    line-height: 80px;
+    font-family: 'Nunito', sans-serif;
+}
+nav a {
+    color: white;
+}
+nav a:hover {
+    color: blue;
+    transition: .3s;
+}
+nav #icon {
+    float: right;
+    line-height: 80px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1048px) {
+    nav ul {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 909px) {
+    nav #icon {
+        display: block;
+        margin-right: 40px;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #3498db;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+    }
+    nav li {
+        margin: 30px 0;
+        display: block;
+        text-align: center;
+    }
+    label.logo {
+        margin: 0 -50px;
+    }
+    a.active, a:hover {
+        color: #3498db;
+    }
+    nav ul.show {
+        left: 0;
+    }
+
+}
+
+/*-------------------------Homepage-----------------------------*/
+
+.header-area h2 {
+    
+
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: #fff;
+    font-size: 3.5em;
+    text-shadow:  0 2px 5px rgba(0,0,0, .5);
+}
+.header-area h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    font-size: 3.5em;
+    text-shadow:  0 2px 5px rgb(0, 0, 0);
+    color: white;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.header-area h2 span {
+    color:#3498db;
+}
+
+@media (max-width: 1500px) {
+    .header-area h1 {
+        padding-top: 250px;
+    }
+}
+@media (max-width: 785px) {
+    .header-area h1 {
+        padding-top: 230px;
+    }
+}
+@media (max-width: 584px) {
+    .header-area h1 {
+        padding-top: 180px;
+    }
+    .header-area {
+        font-size: 15px;
+    }
+}
+@media (max-width: 397px) {
+    .header-area {
+        font-size: 12px;
+    }
+}
+
+
+
+
+/*----------------------------2nd section----------------------------------*/
+
+
+#about {
+    height: auto;
+    max-width: 100%;
+        background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.8)
+    ),
+    /* bottom, image */
+    url(bg_bggenerator_com.png);
+}
+.abouttitle {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.aboutme {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    margin:0 20%;
+}
+.aboutme img {
+    height: 400px;
+    padding: 0 20px;
+    margin:  0 0 50px 0;
+}
+.aboutme h1 {
+    text-align: center;
+}
+.aboutme div {
+    margin: 0;
+}
+.aboutme div p {
+    color: white;
+    font-size: 1.3rem;
+    width: 450px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    text-align: center;
+}
+.aboutme div p span {
+    color: black;
+    
+}
+.anchor {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.downloadcvbtn {
+    padding: 10px 15px;
+    background-color:#343F4F;
+    color: white;
+    border-radius: 40px;
+    border: 1px solid white;
+}
+.myworkbtn {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 40px;
+    
+ }
+
+
+
+@media (max-width: 788px) {
+    .aboutme div p {
+        font-size: 1.1em;
+        width: 350px;
+    }
+}
+@media (max-width: 676px) {
+    .aboutme img {
+        height: 250px;
+    }
+    .aboutme div p {
+        font-size: 0.95em;
+    }
+}
+@media (max-width: 586px) {
+    .aboutme {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .aboutme div {
+        margin-top: 30px;
+    }
+    .aboutme img {
+        margin: 0;
+    }
+    #about {
+        height: 120vh;
+    }
+   
+}
+@media (max-width: 376px) {
+    #about {
+        height: 110vh;
+    }
+}
+
+
+/*--------------------skills----------------------------*/
+
+#Skills {
+    height: auto;
+    width: 100vw;
+    
+}
+.skills-header {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.skills-header h1 {
+    margin-bottom: 20px;
+}
+.skillswrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 20%;
+
+}
+
+.skillswrapper div {
+    display: block;
+    margin: 20px;
+    height: 320px;
+    width: 300px;
+    border: 1px solid rgb(143, 143, 143);
+    text-align: center;
+    margin: 20px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 10px;
+}
+.skillswrapper div:hover {
+    background-color: #3498db;
+    backface-visibility: inherit;
+    border: 1px solid rgb(0, 38, 255);
+    color: rgb(219, 219, 219);
+    transition: all .4s;
+}
+.skillswrapper div img {
+    height: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.skillswrapper div p {
+    margin-top: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+@media (max-width: 500px) {
+    .skillswrapper {
+        margin: 20px 10%;
+    }
+    .skillswrapper div{
+        width: 420px;
+        height: 360px;
+    }
+    .skillswrapper div p {
+        font-size: 15px;
+    }
+    .skills-header p {
+        font-size: 15px;
+    }
+}
+
+
+/*-------------------Projects---------------------------*/
+
+#projects {
+    min-height: 70vh;
+    height: auto;
+    width: 100vw;
+    border-top: 1px solid grey;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.8)
+    ),
+    /* bottom, image */
+    url(bg_bggenerator_com.png);
+}
+.projects-header h1, .projects-header p {
+    margin-top: 30px;
+     text-align: center;
+     color: white;
+ 
+     font-family: 'Jost', sans-serif;
+ }
+ 
+.projects-mockups {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects-mockups div {
+    
+    height: 400px;
+    width: 450px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 50px 0;
+    border-radius: 5px;
+}
+
+.projects-mockups div img {
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+
+.projects-mockups div a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 10px 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.projects-mockups div a:hover {
+    color: #3498db;
+    transition: .2s all;
+}
+
+@media (max-width: 500px) {
+    .projects-mockups div {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+
+/*----------------------Contact-------------------------*/
+
+#contact {
+    height: 30vh;
+    width: 100%;
+    background: #3498db;
+}
+#contact h1 {
+    
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+#contact  div {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact div a {
+    margin: 30px;
+    font-size: 30px;
+    color: black;
+
+}
+#contact div a:hover {
+    
+    color: rgb(153, 153, 153);
+    
+}
+
